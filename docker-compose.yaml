@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  armaa_mysql:
+    container_name: armaa_mysql
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "12345678"
+      MYSQL_DATABASE: "armaa"
+    ports:
+      - "3306:3306"
